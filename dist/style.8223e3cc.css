@@ -1,0 +1,162 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* style */
+body {
+  background-color: #f0f2f5;
+  /* min-width: 100vw;
+  min-height: 100vh;
+  background: url(/images/bg.jpg) no-repeat top left;
+  background-size: cover;*/
+}
+
+header {
+  margin: 20px;
+}
+@media (min-width:500px) {
+  header {
+    margin: 100px 0 60px;
+  }
+}
+.searchForm {
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width:500px) {
+    .searchForm {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+.searchForm > input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+}
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: rgb(15, 142, 201);
+  color: white;
+  cursor: pointer;
+}
+main {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
+}
+@media (min-width:500px) {
+    main ul {
+    justify-content: start;
+    margin-left: 0;
+    margin-right: -25px;
+  }
+}
+main li {
+  margin-bottom: 10px;
+}
+@media (min-width:500px) {
+  main li {
+    margin-right: 25px;
+  }
+}
+
+main .site {
+  width: 160px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+main .site:hover {
+  box-shadow: 3px 3px 4px 4px #ccc;
+  transition: box-shadow .3s
+}
+main .site > .logo {
+  width: 64px;
+  height: 64px;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+main .site > .link {
+  font-size: 14px;
+  padding-top: 10px;
+}
+main .site > .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+  cursor: default;
+}
+main .site:hover > .close {
+  display: block;
+}
+main .addSite {
+background-color: white;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px 0;
+  cursor: pointer;
+}
+main .addSite .iconWrapper {
+  width: 64px;
+  height: 64px;
+}
+main .addSite .icon {
+  width: 64px;
+  height: 64px;
+}
+main .addSite .text {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+footer {
+    margin-top: 40px;
+}
+footer .copy {
+  height: 40px;
+  background-color: #aaa;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0px;
+}
